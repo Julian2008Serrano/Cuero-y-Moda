@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="style/css/principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="header-icons">
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart" id="cart-icon"></i>
+        
+    </div>
+    <div class="logo">CUERO <span>Y MODA</span></div>
+</header>
+
+    <!-- Sidebar -->
+     <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" id="sidebar-close">&times;</a>
+        <a href="Principal.html">Inicio</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="mujeres.html">Mujeres</a>
+        <a href="hombres.html">Hombres</a>
+        <a href="accesorios.html">Accesorios</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div id="cart" class="cart">
+        <span class="close-btn" id="cart-close">&times;</span>
+        <h2>Tu Carrito</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80" alt="Producto">
+                <div class="cart-item-info">
+                    <h4>Chaqueta de Cuero</h4>
+                    <p>Talla: M</p>
+                    <p>$120.00 x 1</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80" alt="Producto">
+                <div class="cart-item-info">
+                    <h4>Bolso de Cuero</h4>
+                    <p>Color: Negro</p>
+                    <p>$80.00 x 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            Total: $200.00
+        </div>
+        <button class="checkout-btn">Proceder al Pago</button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <section class="banner">
+            <h1>Galeria</h1>
+            <p>Descubre nuestra exclusiva línea de prendas y accesorios en cuero</p>
+            <a href="#" class="btn">VER COLECCIÓN</a>
+        </section>
+        <section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="local"><img src="Imagenes/Local.jpeg" alt="" /></div><div class="content"><h2>CUERO Y MODA SOGAMOSO</h2><p class="quienes">Cuero y Moda, de la ciudad de Sogamoso, Boyacá, está especializada en la fabricación y venta de productos de
+									 cuero, caracterizándose por la calidad de sus artículos, la originalidad en los diseños de los mismos y su atención y compromiso con la clientela.</p>
+							
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/.jpg" alt="" /></div><div class="content">
+								<h2 class mision>MISION<br /></h2>
+								<p>Ofrecer productos en cuero de alta calidad, con diseños exclusivos y funcionales, que combinan elegancia y durabilidad. Nuestra empresa busca resaltar el trabajo artesanal colombiano y brindar a nuestros clientes piezas únicas que expresen estilo y autenticidad.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2 class="vision">VISION<br /></h2>
+								<p>Ser reconocidos a nivel local como una marca líder en productos de cuero artesanal, destacándonos por nuestra excelencia en diseño, compromiso con la sostenibilidad y cercanía con nuestros clientes. Aspiramos a crecer sin perder nuestra esencia local ni la calidad que nos distingue.</p>
+							</div>
+						</section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Cuero y Moda es una tienda especializada en prendas y accesorios de cuero de la más alta calidad.</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <p><i class="fas fa-map-marker-alt"></i> CRA 10 No. 15-40, centro, sogamoso ,boyacá</p>
+                <p><i class="fas fa-phone"></i> +57 3144805949</p>
+                <p><i class="fas fa-envelope"></i> https://g.co/kgs/4fUtkYD</p>
+            </div>
+            <div class="footer-section">
+                <h3>HORARIO</h3>
+                <p>Lunes a Viernes: 9:00AM - 7:00PM</p>
+                <p>Sábados: 9:00AM - 7:00PM</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cuero y Moda. Todos los derechos reservados.</p>
+        </div>
+                <ul class="icons">
+							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="PONER AQUI EL ENLACE" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>				
+    </footer>
+
+    <script>
+        // Funcionalidad del sidebar
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebar-close');
+        
+        menuIcon.addEventListener('click', () => {
+            sidebar.style.width = '250px';
+        });
+        
+        sidebarClose.addEventListener('click', () => {
+            sidebar.style.width = '0';
+        });
+        
+        // Funcionalidad del carrito
+        const cartIcon = document.getElementById('cart-icon');
+        const cart = document.getElementById('cart');
+        const cartClose = document.getElementById('cart-close');
+        
+        cartIcon.addEventListener('click', () => {
+            cart.style.width = '350px';
+        });
+        
+        cartClose.addEventListener('click', () => {
+            cart.style.width = '0';
+        });
+        
+        // Añadir al carrito
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Producto añadido al carrito');
+            });
+        });
+    </script>
+</body>
+</html>
