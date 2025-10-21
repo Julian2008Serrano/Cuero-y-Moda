@@ -12,83 +12,68 @@
     <header>
     <div class="header-icons">
         <i class="fas fa-bars" id="menu-icon"></i>
-        <i class="fas fa-search"></i>
-        <i class="fas fa-user"></i>
-        <i class="fas fa-shopping-cart" id="cart-icon"></i>
-        
+        <a href="registrarse.html"><i class="fas fa-user"></i></a>
+       
+       <!-- <i class="fas fa-shopping-cart" id="cart-icon"></i>-->
     </div>
     <div class="logo">CUERO <span>Y MODA</span></div>
 </header>
 
     <!-- Sidebar -->
-     <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="close-btn" id="sidebar-close">&times;</a>
-        <a href="Principal.html">Inicio</a>
-        <a href="catalogo.html">Catalogo</a>
-        <a href="mujeres.html">Mujeres</a>
-        <a href="hombres.html">Hombres</a>
-        <a href="accesorios.html">Accesorios</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
+    <div id="sidebar" class="sidebar">
+  <a href="javascript:void(0)" class="close-btn" id="sidebar-close">&times;</a>
+  <div class="menu-item">
+    <a href="catalogo.html">Catálogo</a>
+  </div>
+  <a href="contacto.html">Contacto</a>
+</div>
     </div>
 
     <!-- Carrito de compras -->
     <div id="cart" class="cart">
         <span class="close-btn" id="cart-close">&times;</span>
         <h2>Tu Carrito</h2>
-        <div class="cart-items">
-            <div class="cart-item">
-                <img src="https://via.placeholder.com/80" alt="Producto">
-                <div class="cart-item-info">
-                    <h4>Chaqueta de Cuero</h4>
-                    <p>Talla: M</p>
-                    <p>$120.00 x 1</p>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img src="https://via.placeholder.com/80" alt="Producto">
-                <div class="cart-item-info">
-                    <h4>Bolso de Cuero</h4>
-                    <p>Color: Negro</p>
-                    <p>$80.00 x 1</p>
-                </div>
-            </div>
-        </div>
-        <div class="cart-total">
-            Total: $200.00
-        </div>
-        <button class="checkout-btn">Proceder al Pago</button>
+        <div class="cart-items"></div>
+        <div class="cart-total">Total: $0</div>
+        <button class="checkout-btn" id="checkout-btn">Proceder al Pago</button>
     </div>
-
-    <!-- Contenido principal -->
-    <div class="main-content">
-        <section class="banner">
-            <h1>Galeria</h1>
-            <p>Descubre nuestra exclusiva línea de prendas y accesorios en cuero</p>
-            <a href="#" class="btn">VER COLECCIÓN</a>
-        </section>
-        <section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="local"><img src="Imagenes/Local.jpeg" alt="" /></div><div class="content"><h2>CUERO Y MODA SOGAMOSO</h2><p class="quienes">Cuero y Moda, de la ciudad de Sogamoso, Boyacá, está especializada en la fabricación y venta de productos de
-									 cuero, caracterizándose por la calidad de sus artículos, la originalidad en los diseños de los mismos y su atención y compromiso con la clientela.</p>
-							
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/.jpg" alt="" /></div><div class="content">
-								<h2 class mision>MISION<br /></h2>
-								<p>Ofrecer productos en cuero de alta calidad, con diseños exclusivos y funcionales, que combinan elegancia y durabilidad. Nuestra empresa busca resaltar el trabajo artesanal colombiano y brindar a nuestros clientes piezas únicas que expresen estilo y autenticidad.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2 class="vision">VISION<br /></h2>
-								<p>Ser reconocidos a nivel local como una marca líder en productos de cuero artesanal, destacándonos por nuestra excelencia en diseño, compromiso con la sostenibilidad y cercanía con nuestros clientes. Aspiramos a crecer sin perder nuestra esencia local ni la calidad que nos distingue.</p>
-							</div>
-						</section>
-
+<!--Carrusel -->
+<div class="slider-box">
+    <ul>
+        <li>
+            <img src="Imagenes/B10.jpeg" alt="Imagen 1">
+        </li>
+        <li>
+            <img src="Imagenes/C3.jpeg" alt="Imagen 2">
+        </li>
+        <li>
+            <img src="Imagenes/B11.jpeg" alt="Imagen 3">
+        </li>
+        <li>
+            <img src="Imagenes/B12.jpeg" alt="Imagen 1">
+        </li>
+        <li>
+            <img src="Imagenes/C2.jpeg" alt="Imagen 2">
+        </li>
+        <li>
+            <img src="Imagenes/B3.jpeg" alt="Imagen 3">
+        </li>
+        <li>
+            <img src="Imagenes/B10.jpeg" alt="Imagen 1">
+        </li>
+        <li>
+            <img src="Imagenes/C3.jpeg" alt="Imagen 2">
+        </li>
+        <li>
+            <img src="Imagenes/B11.jpeg" alt="Imagen 3">
+        </li>
+         <li>
+            <img src="Imagenes/L2.jpeg" alt="Imagen 3">
+        </li>
+    </ul>
+    <a href="catalogo.html" class="carrusel-boton">Ver colección</a>
+</div>
     </div>
-
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -112,13 +97,23 @@
         <div class="copyright">
             <p>&copy; 2025 Cuero y Moda. Todos los derechos reservados.</p>
         </div>
-                <ul class="icons">
-							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="PONER AQUI EL ENLACE" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="PONER AQUI EL ENLACE" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>				
+                <ul class="footer-social">
+    <li>
+        <a href="https://m.facebook.com/cueroymodasogamoso/" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/cuero_y_moda_sogamoso/?hl=es" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </li>
+    <li>
+        <a href="tel:+573144805949" title="Teléfono">
+            <i class="fas fa-phone"></i>
+        </a>
+    </li>
+</ul>				
     </footer>
 
     <script>
@@ -148,14 +143,94 @@
             cart.style.width = '0';
         });
         
-        // Añadir al carrito
-        const addToCartButtons = document.querySelectorAll('.add-to-cart');
-        
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                alert('Producto añadido al carrito');
-            });
+        // --- Carrito persistente con localStorage ---
+function getCart() {
+    return JSON.parse(localStorage.getItem('cart')) || [];
+}
+
+function saveCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function renderCart() {
+    const cart = getCart();
+    cartItemsContainer.innerHTML = '';
+    let total = 0;
+    cart.forEach(item => {
+        total += parseFloat(item.price.replace('$', '').replace(',', '.')) * item.qty;
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <img src="${item.imgSrc}" alt="Producto" style="width:60px;height:auto;">
+            <div class="cart-item-info">
+                <h4>${item.title}</h4>
+                <p class="cart-item-price" style="display:none;">${item.price}</p>
+                <div class="cart-item-controls">
+                    <button class="cart-item-minus">-</button>
+                    <span class="cart-item-qty">${item.qty}</span>
+                    <button class="cart-item-plus">+</button>
+                </div>
+                <span class="cart-item-price-show">${item.price}</span>
+            </div>
+        `;
+        // Botón +
+        cartItem.querySelector('.cart-item-plus').addEventListener('click', () => {
+            item.qty += 1;
+            saveCart(cart);
+            renderCart();
         });
+        // Botón -
+        cartItem.querySelector('.cart-item-minus').addEventListener('click', () => {
+            if (item.qty > 1) {
+                item.qty -= 1;
+            } else {
+                cart.splice(cart.indexOf(item), 1);
+            }
+            saveCart(cart);
+            renderCart();
+        });
+        cartItemsContainer.appendChild(cartItem);
+    });
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+// Al cargar la página, muestra el carrito guardado
+document.addEventListener('DOMContentLoaded', renderCart);
+
+function getProductInfo(button) {
+    const productCard = button.closest('.product-card');
+    const title = productCard.querySelector('.product-title').textContent;
+    const price = productCard.querySelector('.product-price').textContent;
+    const imgSrc = productCard.querySelector('img').src;
+    return { title, price, imgSrc };
+}
+
+function addCartItem({ title, price, imgSrc }) {
+    let cart = getCart();
+    const index = cart.findIndex(item => item.title === title);
+
+    if (index !== -1) {
+        cart[index].qty += 1;
+    } else {
+        cart.push({ title, price, imgSrc, qty: 1 });
+    }
+    saveCart(cart);
+    renderCart();
+
+    // Mostrar mensaje "añadido al carrito"
+    const cartMessage = document.getElementById('cart-message');
+    cartMessage.style.display = 'block';
+    setTimeout(() => {
+        cartMessage.style.display = 'none';
+    }, 1200);
+}
+
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const product = getProductInfo(button);
+        addCartItem(product);
+    });
+});
     </script>
 </body>
 </html>
